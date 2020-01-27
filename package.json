@@ -8,7 +8,8 @@
     "start": "webpack --watch --progress t",
     "build": "webpack --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js",
-    "host": "firebase deploy --only hosting"
+    "host": "firebase deploy --only hosting",
+    "install":"npm i"
   },
   "author": "pinglinh",
   "license": "ISC",
