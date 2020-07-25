@@ -1,22 +1,23 @@
 /*
-* Template Name: Gravity
+* Template Name: Orbit
 * Template Author: Untree.co
-* Tempalte URI: https://untree.co/
+* Author URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import "functions";
 @import "variables";
 @import "mixins";
 
-$primary: #FB742D;
+$primary: #96bb7c;
+$secondary: #12947f;
 $black: #000000;
 $white: #ffffff;
 $grey: #5b5656;
-$heading_color: #000;
-$text_light_color: #a0a4ab;
-
-$font-family: 'Playfair Display', serif;
-$font-family-sans-serif: 'Lato', sans-serif;
+$heading_color: #dddde6;
+$text_light_color: #333;
+$bg_color: #37373f;
+$font-family: 'Nunito', sans-serif;
+// $font-family-sans-serif: $font-family;
 
 @import 'site-base';
 @import 'site-navbar';

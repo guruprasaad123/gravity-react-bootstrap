@@ -1,20 +1,29 @@
 // MENU
-.position-relative {
-	position: relative;
-}
 .logo {
 	font-size: 24px;
 	color: $white;
 	font-weight: 700;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-top: -4px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid $white;
 	&:hover {
 		color: $white;
 	}
 }
 .site-nav {
 	position: absolute;
-	top: 0;
-	z-index: 9;
 	width: 100%;
+	// left: 0;
+	z-index: 10;
+	a {
+		position: relative;
+		z-index: 9;
+		cursor: pointer;
+	}
 }
 
 .site-nav {	
@@ -26,7 +35,7 @@
 		font-size: 24px;
 	}
 	.site-navigation {
-		
+
 		.site-menu {
 			
 			margin-bottom: 0;
@@ -36,32 +45,56 @@
 				> a {
 					font-size: 14px;
 					padding: 10px 15px;
-					color: $black;
 					display: inline-block;
 					text-decoration: none!important;
-					color: $black;
+					color: rgba($white, .5);
+					position: relative;
+					
 					&:hover {
-						color: $primary;
+						color: $white;
 						
+					}
+
+					&.active {
+						color: $primary;
 					}
 				}
 				
-				&.cta-button {
+				&.cta-button-outline {
 					a {
-						padding: 6px 20px;
-						border: 2px solid rgba($white, .1);
+						padding: 5px 22px;
+						border: 1px solid rgba($black, .1);
 						color: $black;
 						border-radius: 30px;
 						&:hover {
 							color: $black;
-							background: $primary;
-							border-color: $primary;
+							background: $white;
+							border-color: $black;
+						}
+					}
+					&.active {
+						a {
+							color: $black;
+							background: $white;
+							border-color: $white;
+						}
+					}
+				}
+				&.cta-primary {
+					a {
+						padding: 5px 22px;
+						border: 1px solid transparent;
+						color: $white!important;
+						background: $primary;
+						border-radius: 30px;
+						&:hover {
+							
 						}
 					}
 				}
 				&.active {
 					> a {
-						color: $primary;
+						color: $white;
 					}
 				}
 			}
@@ -94,7 +127,7 @@
 					margin-left: 0px;
 					background: $white;
 					transition: 0.2s 0s;
-				
+
 					&.arrow-top {
 						position: absolute;
 
@@ -143,6 +176,11 @@
 								color: $primary;
 							}
 						}
+						&.active {
+							> a {
+								color: $primary;
+							}
+						}
 
 						&.has-children {
 							> a {
@@ -174,7 +212,7 @@
 				
 				&:hover, &:focus, &:active {
 					> a {
-						color: $primary;
+						// color: $white;
 					}
 				}
 				&:hover, &:focus, &:active {
@@ -185,12 +223,109 @@
 						visibility: visible;
 						opacity: 1;
 
-				
+
 					}
 				}
 			}
 		}
 	}
+	&.dark {
+		a {
+			color: $black;
+		}
+
+		.site-navigation {
+
+			.site-menu {
+				
+				> li {
+
+					> a {
+						color: rgba($black, .5);
+						
+						&:hover {
+							color: $black;
+							
+						}
+					}
+					
+					
+					&.active {
+						> a {
+							color: $black;
+						}
+					}
+					&.has-children {
+						&.dropdown {
+							&:hover, &:focus, &:active {
+								> a {
+									color: $primary;
+								}
+							}
+						}
+
+						&:hover, &:focus, &:active {
+							> a {
+								color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+
+	&.scrolled {
+		background-color: $white;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin-top: -130px;
+		padding-top: 10px!important;
+		padding-bottom: 10px!important;
+		box-shadow: 0 4px 15px -5px rgba(0,0,0,.1);
+		&.awake {
+			margin-top: 0px;
+			transition: .3s all ease-out;
+		}
+		&.sleep {
+			transition: .3s all ease-out;	
+		}
+		
+		.site-navigation {
+			.site-menu {
+				li {
+					a {
+						color: $black;
+						&.active {
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+
+		.logo {
+			color:$black!important;
+			border-color: $black;
+			top: 14px;
+			position: absolute;
+			@include media-breakpoint-down(md) {
+				top: 10px;
+			}
+		}
+		
+		.burger:before, .burger span, .burger:after {
+			background: $black!important;
+			transition: .0s all ease;
+		}
+
+	}
+	
 }
 .site-mobile-menu-close {
 	display: block;
@@ -283,7 +418,7 @@
 
 	.site-mobile-menu-body {
 		overflow-y: scroll;
-  	-webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		position: relative;
 		padding: 0 20px 20px 20px;
 
@@ -314,11 +449,13 @@
 		li {
 			position: relative;
 			display: block;
-			&.active {
-				> a {
+			> a {
+				
+				&.active {
 					color: $primary;
 				}
 			}
+			
 		}
 		.arrow-collapse {
 			position: absolute;
@@ -402,10 +539,10 @@
 		.site-menu-toggle {
 			color: $black;
 		}
-		.site-logo {
-			a {
-				color: $black;
-			}
+		.logo {
+
+			color: $black;
+
 		}
 		.site-menu {
 			> li {
@@ -423,16 +560,14 @@
 			background: $black;
 			transition: .0s all ease;
 		}
+		.logo {
+			color: $black!important;
+		}
 		.site-navbar {
 			background: $black;
 			border-bottom: 1px solid transparent;
 			box-shadow: 4px 0 20px -5px rgba(0,0,0,.1);
-			.site-logo {
-				a {
-					color: $black!important;
-
-				}
-			}
+			
 			.site-menu {
 				> li {
 					> a {
@@ -444,6 +579,14 @@
 					&.active {
 						a {
 							color: $primary!important;
+						}
+					}
+
+					&.dropdown {
+						&:hover, &:focus {
+							> a {
+								color: $black!important;
+							}
 						}
 					}
 				}
@@ -480,7 +623,7 @@
 	opacity: 1;
 }
 .burger:before, .burger:after {
-    transition: top .35s cubic-bezier(.23,1,.32,1),transform .35s cubic-bezier(.23,1,.32,1),opacity .35s cubic-bezier(.23,1,.32,1),background-color 1.15s cubic-bezier(.86,0,.07,1);
+	transition: top .35s cubic-bezier(.23,1,.32,1),transform .35s cubic-bezier(.23,1,.32,1),opacity .35s cubic-bezier(.23,1,.32,1),background-color 1.15s cubic-bezier(.86,0,.07,1);
 	-webkit-transition: top .35s cubic-bezier(.23,1,.32,1),-webkit-transform .35s cubic-bezier(.23,1,.32,1),opacity .35s cubic-bezier(.23,1,.32,1),background-color 1.15s cubic-bezier(.86,0,.07,1);
 	content: "";
 }
@@ -510,16 +653,17 @@
 }
 .burger.active:before {
 	-webkit-transform: rotate(45deg); 
-    -moz-transform: rotate(45deg);  
+	-moz-transform: rotate(45deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); /*for IE*/
-}
-.burger.active:after {
-	-webkit-transform: rotate(-45deg); 
-    -moz-transform: rotate(-45deg);  
+  }
+  .burger.active:after {
+  	-webkit-transform: rotate(-45deg); 
+  	-moz-transform: rotate(-45deg);  
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5); /*for IE*/
-}
-.burger:focus {
-	outline: none;
-}
+  }
+  .burger:focus {
+  	outline: none;
+  }
+
 
 

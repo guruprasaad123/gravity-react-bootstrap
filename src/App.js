@@ -310,20 +310,20 @@ class App extends Component
     </div>
   </div>
 
-  <div class="subscribe" >
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="subscribe-inner">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <h3 class="heading">Subscribe to our newsletter</h3>
+  <div className="subscribe" >
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col-lg-10">
+          <div className="subscribe-inner">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <h3 className="heading">Subscribe to our newsletter</h3>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-              <div class="col-lg-6">
-                <form action="#" class="d-flex">
-                  <input type="text" class="form-control" placeholder="Your E-mail"/>
-                  <input type="submit" value="Send" class="btn btn-primary"/>
+              <div className="col-lg-6">
+                <form action="#" className="d-flex">
+                  <input type="text" className="form-control" placeholder="Your E-mail"/>
+                  <input type="submit" value="Send" className="btn btn-primary"/>
                 </form>
               </div>
             </div>
@@ -333,54 +333,54 @@ class App extends Component
     </div>
   </div>
 
-  <div class="section services">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col text-center" >
-          <h2 class="heading">Services</h2>
+  <div className="section services">
+    <div className="container">
+      <div className="row mb-4">
+        <div className="col text-center" >
+          <h2 className="heading">Services</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-6 mb-4" >
-          <div class="d-flex service active">
-            <div class="wrap-icon">
-              <span><span class="flaticon-square"></span></span>
+      <div className="row">
+        <div className="col-md-6 col-lg-6 mb-4" >
+          <div className="d-flex service active">
+            <div className="wrap-icon">
+              <span><span className="flaticon-square"></span></span>
             </div>
-            <div class="contents">
+            <div className="contents">
               <h3>Web Development</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 mb-4" >
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="flaticon-technology"></span></span>
+        <div className="col-md-6 col-lg-6 mb-4" >
+          <div className="d-flex service">
+            <div className="wrap-icon">
+              <span><span className="flaticon-technology"></span></span>
             </div>
-            <div class="contents">
+            <div className="contents">
               <h3>Web Design</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-6 mb-4" >
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="flaticon-blueprint"></span></span>
+        <div className="col-md-6 col-lg-6 mb-4" >
+          <div className="d-flex service">
+            <div className="wrap-icon">
+              <span><span className="flaticon-blueprint"></span></span>
             </div>
-            <div class="contents">
+            <div className="contents">
               <h3>Graphic Design</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 mb-4">
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="flaticon-illumination"></span></span>
+        <div className="col-md-6 col-lg-6 mb-4">
+          <div className="d-flex service">
+            <div className="wrap-icon">
+              <span><span className="flaticon-illumination"></span></span>
             </div>
-            <div class="contents">
+            <div className="contents">
               <h3>Copywriting</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
@@ -391,144 +391,144 @@ class App extends Component
     </div>
   </div>
 
-  <div class="testimonials-v2">
-    <div class="container">
-      <div class="row mb-3">
-        <div class="col text-center">
-          <h2 class="heading">Testimonials</h2>
+  <div className="testimonials-v2">
+    <div className="container">
+      <div className="row mb-3">
+        <div className="col text-center">
+          <h2 className="heading">Testimonials</h2>
         </div>
       </div>
 
-      <div class="owl-4-slider dark owl-carousel">
-        <div class="testimonial-v2">
+      <div className="owl-4-slider dark owl-carousel">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_1.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Carl Anderson</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_2.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Drew Wood</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_4.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Michelle Alisson</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_1.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Carl Anderson</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_2.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Drew Wood</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_4.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Michelle Alisson</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_1.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Carl Anderson</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_2.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Drew Wood</h3>
               <span>Director at Google</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-v2">
+        <div className="testimonial-v2">
           <blockquote>
             <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
           </blockquote>
-          <div class="author d-flex">
-            <div class="author-pic">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid"/>
+          <div className="author d-flex">
+            <div className="author-pic">
+              <img src="images/person_4.jpg" alt="Image" className="img-fluid"/>
             </div>
-            <div class="author-name">
+            <div className="author-name">
               <h3>Michelle Alisson</h3>
               <span>Director at Google</span>
             </div>
@@ -540,19 +540,19 @@ class App extends Component
     </div>
   </div>
 
-  <div class="section cta-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="cta">
-            <div class="row align-items-center">
-              <div class="col-md-6">
+  <div className="section cta-section">
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          <div className="cta">
+            <div className="row align-items-center">
+              <div className="col-md-6">
                 <h2>Ready to get started?</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               </div>
-              <div class="col-md-6 text-center text-md-right">
-                <a href="#" class="btn btn-primary  mb-2 mb-md-0">Contact us</a>
-                <a href="#" class="btn btn-primary ">Make a demo</a>
+              <div className="col-md-6 text-center text-md-right">
+                <a href="#" className="btn btn-primary  mb-2 mb-md-0">Contact us</a>
+                <a href="#" className="btn btn-primary ">Make a demo</a>
               </div>
             </div>
           </div>
@@ -561,65 +561,65 @@ class App extends Component
     </div>
   </div>
 
-  <div class="site-footer">
-    <div class="inner first">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">About Untree.co</h3>
+  <div className="site-footer">
+    <div className="inner first">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-lg-4">
+            <div className="widget">
+              <h3 className="heading">About Untree.co</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
-            <div class="widget">
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <div className="widget">
+              <ul className="list-unstyled social">
+                <li><a href="#"><span className="icon-twitter"></span></a></li>
+                <li><a href="#"><span className="icon-instagram"></span></a></li>
+                <li><a href="#"><span className="icon-facebook"></span></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-2 pl-lg-5">
-            <div class="widget">
-              <h3 class="heading">Pages</h3>
-              <ul class="links list-unstyled">
+          <div className="col-md-6 col-lg-2 pl-lg-5">
+            <div className="widget">
+              <h3 className="heading">Pages</h3>
+              <ul className="links list-unstyled">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-2">
-            <div class="widget">
-              <h3 class="heading">Resources</h3>
-              <ul class="links list-unstyled">
+          <div className="col-md-6 col-lg-2">
+            <div className="widget">
+              <h3 className="heading">Resources</h3>
+              <ul className="links list-unstyled">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="widget">
-              <h3 class="heading">Contact</h3>
-              <ul class="list-unstyled quick-info links">
-                <li class="email"><a href="#">info@untree.co</a></li>
-                <li class="phone"><a href="#">+1 222 212 3819</a></li>
-                <li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+          <div className="col-md-6 col-lg-4">
+            <div className="widget">
+              <h3 className="heading">Contact</h3>
+              <ul className="list-unstyled quick-info links">
+                <li className="email"><a href="#">info@untree.co</a></li>
+                <li className="phone"><a href="#">+1 222 212 3819</a></li>
+                <li className="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="inner dark">
-      <div class="container">
-        <div class="row text-center text-md-left">
-          <div class="col-md-6 mb-3 mb-md-0">
-            &copy; 2020. All Rights Reserved. Design by <a href="https://untree.co" target="_blank" class="text-black">Untree.co</a>
+    <div className="inner dark">
+      <div className="container">
+        <div className="row text-center text-md-left">
+          <div className="col-md-6 mb-3 mb-md-0">
+            &copy; 2020. All Rights Reserved. Design by <a href="https://untree.co" target="_blank" className="text-black">Untree.co</a>
           </div>
-          <div class="col-md-6 text-md-right">
-            <a href="#" class="mx-2">Terms</a>
-            <a href="#" class="mx-2">Privacy</a>
+          <div className="col-md-6 text-md-right">
+            <a href="#" className="mx-2">Terms</a>
+            <a href="#" className="mx-2">Privacy</a>
           </div>
         </div>
       </div>

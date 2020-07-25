@@ -1,99 +1,66 @@
 .site-footer {
-	
-	font-size: 14px;
+	background: #efefef;
+	font-size: 14px;	
 	color: #888;
-	.inner {
-		padding-top: 0px;
-		padding-bottom: 70px;
-		background: $light;
-		&.first {
-			padding-top: 80px;	
-		}
-	}
-	@include media-breakpoint-down(md) {
-		padding-top: 30px;
-	}
+	padding: 70px 0;
 	a {
-		color: #999;
-		&:hover {
-			color: $black;
+		color: $primary;
+		position: relative;
+		display: inline-block;
+	}
+	.btn {
+		&:before {
+			display: none;
 		}
 	}
 	.widget {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
+		display: block;
+		position: relative;
+		z-index: 1;
 		h3 {
-			font-size: 14px;
-			font-weight: 700;
-			margin-bottom: 20px;
+			font-size: 16px;
 			color: $black;
-			font-family: $font-family-sans-serif;
+			margin-bottom: 30px;
 		}
 
-		.social {
-			li {
-				display: inline-block;
-				a {
-					width: 30px;
-					height: 30px;
-					border-radius: 50%;
-					background: $primary;
-					display: inline-block;
-					position: relative;
-					color: $white;
-					box-shadow: 0 5px 10px -2px rgba($black, .2);
-					span {
-						font-size: 16px;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-					}
-					&:hover {
-						background-color: $primary;
-						color: $white;
-					}
-				}
-			}
-		}
 		.links {
+			width: 150px;
 			li {
-				display: block;
 				margin-bottom: 10px;
 				a {
-					color: #999;
-					&:hover {
-						color: $black;
-					}
+					color: #777;
 				}
 			}
 		}
 	}
 
-	ul.quick-info {
+	.social {
 		li {
-			position: relative;
-			padding-left: 30px;
-			&:before {
-				left: 0;
-				position: absolute;
-				content: "";
-				font-family: 'icomoon';
-			}
-			&.email {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				background: #777;
+				border-radius: 50%;
+				color: $white;
 				&:before {
-					content: "\f0e0";
+					display: none;
 				}
-			}
-			&.phone {
-				&:before {
-					content: "\f095";
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 				}
-			}
-			&.address {
-				&:before {
-					content: "\e8b4";
+				&:hover {
+					background: lighten($primary, 10%);
+					color: $white;
 				}
 			}
 		}
 	}
+
 }
